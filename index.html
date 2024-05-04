@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+</head>
+<body class="flex flex-col items-center min-h-screen">
+    <main>
+       <section id="hero" class="bg-paleCyan p-4 md:px-32">
+        <nav class=" mx-auto flex items-center justify-between mb-28">
+            <img src="images/logo.svg" class="w-40" alt="huddle logo">
+            <button class="py-2 px-8 bg-white font-open-sans font-bold text-black rounded-full shadow-lg hover:brightness-110">Try it free</button>
+        </nav>
+        <div class="flex flex-col items-center space-y-12 md:flex-row md:justify-between md:space-y-0 md:space-x-12">
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl font-poppins font-bold text-darkCyan mb-4">Build The Community Your Fans Will Love</h1>
+                <p class="text-sm font-open-sans text-darkGrayishCyan mb-8 md:max-w-xl">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+                <button class="py-2 px-8 bg-pink font-open-sans font-bold text-white rounded-full shadow-lg hover:brightness-110">Get Started For Free</button>
+            </div>
+            <div class="w-full md:w-1/2">
+                <img src="images/illustration-mockups.svg" class="w-full" alt="mockups">
+            </div>
+        </div>
+       </section> 
+       <section id="cards" class="flex flex-col space-y-12 items-center p-4 pb-24 md:p-32">
+        <div class="flex flex-col-reverse items-center w-[90%] md:max-w-[70%] md:flex-row md:space-y-0 md:space-x-8 shadow-lg p-8 rounded-xl bg-white">
+            <div class="flex flex-col items-center space-y-4 md:items-start">
+                <h2 class="font-poppins font-bold text-2xl text-center md:text-left">Grow Together</h2>
+                <p class="font-open-sans text-grayishBlue text-center md:text-left">Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
+            </div>
+            <img src="images/illustration-grow-together.svg" alt="illustration-grow-together" class="w-full md:w-1/2 mb-8">
+        </div>
+        <div class="flex flex-col-reverse items-center w-[90%] md:max-w-[70%] md:flex-row md:space-y-0 md:space-x-8 shadow-lg p-8 rounded-xl bg-white">
+            <div class="flex flex-col items-center space-y-4 md:items-start">
+                <h2 class="font-poppins font-bold text-2xl text-center md:text-left">Flowing Conversations</h2>
+                <p class="font-open-sans text-grayishBlue text-center md:text-left">You wouldn't paginate a conversation in real life, so why do it online? Our threads 
+                    have just-in-time loading for a more natural flow.</p>
+            </div>
+            <img src="images/illustration-flowing-conversation.svg" alt="illustration-grow-together" class="w-full md:w-1/2 mb-8">
+        </div>
+        <div class="flex flex-col-reverse items-center w-[90%] md:max-w-[70%] md:flex-row-reverse md:space-y-0 md:space-x-8 shadow-lg p-8 rounded-xl bg-white">
+            <div class="flex flex-col items-center space-y-4 md:items-start md:ml-10">
+                <h2 class="font-poppins font-bold text-2xl text-center md:text-left">Your Users</h2>
+                <p class="font-open-sans text-grayishBlue text-center md:text-left">It takes no time at all to integrate Huddle with your app's authentication solution. 
+                    This means, once signed in to your app, your users can start chatting immediately.</p>
+            </div>
+            <img src="images/illustration-your-users.svg" alt="illustration-grow-together" class="w-full md:w-1/2 mb-8">
+        </div>
+       </section>
+       <section id="cta" class="rounded-xl p-8 shadow-xl bg-white w-[90%] mx-auto max-w-md relative z-10 -bottom-20">
+        <div class="flex flex-col items-center space-y-8">
+            <h2 class="font-poppins font-bold text-2xl text-center">Ready To Build Your Community?</h2>
+            <button class="py-2 px-8 bg-pink font-open-sans font-bold text-white rounded-full shadow-lg hover:brightness-110">Get Started For Free</button>
+        </div>
+       </section>
+       <footer class="bg-darkCyan text-white pt-24 p-4 md:p-32 w-full">
+        <div class="flex flex-col space-y-8 md:space-y-0 md:space-x-4 md:flex-row md:items-start md:justify-between mt-12">
+            <div class="flex flex-col space-y-4">
+                <div class="flex items-start space-x-2">
+                    <img src="images/icon-location.svg">
+                    <p class="text-sm md:max-w-96"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img src="images/icon-phone.svg">
+                    <p class="text-sm"> +1-543-123-4567</p>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img src="images/icon-email.svg">
+                    <p class="text-sm"> example@huddle.com</p>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-8">
+                <div class="flex flex-col space-y-2">
+                    <a class="text-sm" href="#">About Us</a>
+                    <a href="#" class="text-sm">What We Do</a>
+                    <a href="#" class="text-sm">FAQ</a>
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <a class="text-sm" href="#">Career</a>
+                    <a href="#" class="text-sm">Blog</a>
+                    <a href="#" class="text-sm">Contact Us</a>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4 justify-center">
+                <i class="fa-brands fa-facebook text-white hover:text-pink cursor-pointer"></i>
+                <i class="fa-brands fa-twitter text-white hover:text-pink cursor-pointer"></i>
+                <i class="fa-brands fa-instagram text-white hover:text-pink cursor-pointer"></i>
+            </div>
+        </div>
+        <p class="text-center md:text-right my-8">&copy; Copyright 2018 Huddle. All rights reserved.</p>
+       </footer>
+    </main>
+</body>
+</html>

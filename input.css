@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+#hero {
+    background-image: url('../images/bg-hero-mobile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@media (min-width: 768px) {
+    #hero {
+        background-image: url('../images/bg-hero-desktop.svg');
+    }
+}
